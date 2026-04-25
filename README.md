@@ -25,3 +25,21 @@ Open http://localhost:3000.
 4. Keep the default Vercel settings for Next.js and deploy.
 
 Every push to the main branch will trigger a new deployment.
+
+## Deploy With GitHub Pages
+
+This project also supports GitHub Pages. The workflow in `.github/workflows/pages.yml`
+builds the site as a static export and deploys the generated `out` directory.
+
+After pushing to GitHub:
+
+1. Open the repository on GitHub.
+2. Go to `Settings` -> `Pages`.
+3. Under `Build and deployment`, set `Source` to `GitHub Actions`.
+4. Push to `main`, or run the `Deploy to GitHub Pages` workflow manually.
+
+For a repository named `openreview-blog`, the Pages URL will usually be:
+
+```text
+https://your-github-username.github.io/openreview-blog/
+```
